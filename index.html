@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
 <style>
 .container {
     width: 100%;
@@ -58,7 +67,7 @@
       <h2>Login</h2>
       <div class="form-control">
         <label for="username">Username</label>
-        <input type="text" id="username" name="username" required>
+        <input type="email" id="email" name="email" required>
       </div>
       <div class="form-control">
         <label for="password">Password</label>
@@ -67,17 +76,10 @@
       <button type="submit">Login</button>
     </form>
   </div>
-  <script>const form = document.getElementById('login-form');
 
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-      const username = form.elements.username.value;
-      const password = form.elements.password.value;
+      <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-auth.js"></script>
+      <script src="login.js"></script>
+</body>
 
-      if (username === 'username' && password === 'password') {
-        alert('You have successfully logged in!');
-      } else {
-        alert('Invalid username or password');
-      }
-    });
-    </script>
+</html>
