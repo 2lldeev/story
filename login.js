@@ -19,7 +19,7 @@ const firebaseConfig = {
     firebase.auth().signInWithEmailAndPassword(w_email, w_password)
       .then(function() {
         console.log("logged in")
-        console.log(auth.currentuser)
+        console.log(firebase.auth.currentuser)
       })
       .catch(function(error) {
         var errorCode = error.code;
