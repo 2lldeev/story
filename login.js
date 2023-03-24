@@ -8,19 +8,17 @@ const firebaseConfig = {
     appId: "1:103302520342:web:f7833651ac5a48d34a9f37",
     measurementId: "G-048J8S9WWB"
   };
-  
+
   firebase.initializeApp(firebaseConfig);
   
   function login() {
     console.log("wew")
-    var email = document.getElementById("email").value;
+    var email = document.getElementById("email").vشalue;
     var password = document.getElementById("password").value;
   
     firebase.auth().signInWithEmailAndPassword(email, password)
       .then(function() {
         console.log("logged in")
-        const user = auth.currentUser
-        console.log(user)
       })
       .catch(function(error) {
         var errorCode = error.code;
