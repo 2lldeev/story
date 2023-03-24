@@ -13,10 +13,10 @@ const firebaseConfig = {
   
   function login() {
     console.log("wew")
-    var email = document.getElementById("email").vشalue;
-    var password = document.getElementById("password").value;
+    var w_email = document.getElementById("email").vشalue;
+    var w_password = document.getElementById("password").value;
   
-    firebase.auth().signInWithEmailAndPassword(email, password)
+    firebase.auth().signInWithEmailAndPassword(w_email, w_password)
       .then(function() {
         console.log("logged in")
       })
